@@ -1,0 +1,724 @@
+@media(max-width:540px){
+    body{
+        display: flex;
+        align-items: flex-start;
+        background-color: #ffffff;
+    }
+    body .main-index{
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        background-color: rgb(237, 241, 240);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 10px;
+    }
+    .main-index .index-multi-step{
+        flex-direction: column;
+        background-image: url(../images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+        width: 100%;
+        padding: 10px;
+    }
+    .main-index .index-multi-step > .multi-step-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 27%;
+        background: none;
+        justify-content:center;
+        align-items: flex-start;
+        border-radius: 0px;
+    }
+    .main-index .index-multi-step .multi-step-section > div{
+        display: inline-block;
+        padding: 0;
+        justify-content: space-between;
+        width: 50px;
+        height: 50px;
+    }
+    .main-index .index-multi-step .multi-step-section > div span:not(:first-of-type){
+        display: none;
+    }
+    body .main-index{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        background-color: rgb(211, 214, 212);
+        margin: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside{
+        width: calc(90%);
+        padding: 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: none;   
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin-top: 80px;
+    }
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-footer{
+        margin-top: 50px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-section-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff; 
+        display: block; 
+        padding: 10px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+        font-size: 13px;
+        height: 400px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 0 0 10px;}
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header > h3,
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-header > h3{
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type{
+        padding: 0 0 0px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    background-color: #ffffff;
+    color: #a8a6a6;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child:hover{
+    color: rgb(10, 10, 146)
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    display: none;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 30px;
+    width: 100%;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 > .multi-section-2-articale > div{
+    padding: 0 0 0;
+    height: 80px;
+    width: calc(100%);
+    border-radius: 5px; box-shadow: 0px 0 2px black;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > img{
+    width: 13%;
+    margin-left: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type{
+    margin-top: 0px;
+    width: 80%;
+    padding: 0px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:first-of-type{
+    margin-left: 0;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:last-of-type{
+    font-size: 11px;
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3{
+    background-color: #ffffff;
+    font-size: 13px;
+    padding:0 10px 10px;
+    display: none;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4{
+    display: none;
+    padding:0 10px 150px;
+    font-size: 13px;
+    background-color: #ffffff;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-bottom: 100px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 > .multi-section-4-articale{
+    margin-top: 0px;
+    padding: 0 0px;
+}
+
+
+
+/* part fainal part page of thank */
+.main-index .index-multi-step .multi-thank{
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 200px;
+    border-radius: 5px;
+    display: none;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-index .index-multi-step > .multi-thank > .thank-header > img{
+    width: 25%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header h3{
+    margin-bottom: 0;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section > span{
+    width: 100%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section{
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0%;
+}
+}
+
+
+@media(max-width:414px){
+    body{
+        display: flex;
+        align-items: flex-start;
+        background-color: #ffffff;
+    }
+    body .main-index{
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        background-color: rgb(187, 199, 195);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 10px;
+    }
+    .main-index .index-multi-step{
+        flex-direction: column;
+        background: url(../images/bg-sidebar-mobile.svg);
+        background-size: 100%;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10px;
+    }
+    .main-index .index-multi-step > .multi-step-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 27%;
+        background: none;
+        justify-content:center;
+        align-items: flex-start;
+        border-radius: 0px;
+    }
+    .main-index .index-multi-step .multi-step-section > div{
+        display: inline-block;
+        padding: 0;
+        justify-content: space-between;
+        width: 50px;
+        height: 50px;
+    }
+    .main-index .index-multi-step .multi-step-section > div span:not(:first-of-type){
+        display: none;
+    }
+    .main-index{
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        background-color: rgb(186, 201, 196);
+        margin: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside{
+        width: calc(100%);
+        padding: 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: none;   
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 100%;
+        margin-top: 20px;
+    }
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-footer{
+        margin-top: 50px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-section-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff; 
+        display: block; 
+        padding: 10px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 0 0 10px;}
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header > h3,
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-header > h3{
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type{
+        padding: 0 0 0px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    background-color: #ffffff;
+    color: #a8a6a6;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child:hover{
+    color: rgb(10, 10, 146)
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    display: none;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 30px;
+    width: 100%;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 > .multi-section-2-articale > div{
+    padding: 0 0 0;
+    height: 80px;
+    width: calc(100%);
+    border-radius: 5px; box-shadow: 0px 0 2px black;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > img{
+    width: 13%;
+    margin-left: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type{
+    margin-top: 0px;
+    width: 80%;
+    padding: 0px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:first-of-type{
+    margin-left: 0;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:last-of-type{
+    font-size: 11px;
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3{
+    background-color: #ffffff;
+    font-size: 13px;
+    padding:0 10px 10px;
+    display: none;
+    border-radius: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4{
+    display: none;
+    padding:0 10px 150px;
+    font-size: 13px;
+    background-color: #ffffff;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 > .multi-section-4-articale{
+    margin-top: 0px;
+    padding: 0 0px;
+}
+
+
+
+/* part fainal part page of thank */
+.main-index .index-multi-step .multi-thank{
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100px;
+    border-radius: 5px;
+    display: none;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-index .index-multi-step > .multi-thank > .thank-header > img{
+    width: 25%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header h3{
+    margin-bottom: 0;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section > span{
+    width: 100%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section{
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0%;
+}
+}
+
+
+@media(max-width:280px){
+    body{
+        display: flex;
+        align-items: flex-start;
+        background-color: #ffffff;
+    }
+    body .main-index{
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        background-color: rgb(187, 199, 195);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 10px;
+    }
+    .main-index .index-multi-step{
+        flex-direction: column;
+        background: url(../images/bg-sidebar-mobile.svg);
+        background-size: 100%;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10px;
+    }
+    .main-index .index-multi-step > .multi-step-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 27%;
+        background: none;
+        justify-content:center;
+        align-items: flex-start;
+        border-radius: 0px;
+    }
+    .main-index .index-multi-step .multi-step-section > div{
+        display: inline-block;
+        padding: 0;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+    }
+    .main-index .index-multi-step .multi-step-section > div span:not(:first-of-type){
+        display: none;
+    }
+    .main-index{
+        width: 100%;
+        height: 80%;
+        padding: 0px;
+        background-color: rgb(186, 201, 196);
+        margin: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside{
+        width: calc(110%);
+        padding: 10px 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: none;   
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height:200%;
+       
+    }
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-footer{
+        margin-top: 100px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside > .multi-aside-section-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff; 
+        display: block; 
+        padding: 10px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+   
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding: 0 0 10px;}
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header > h3,
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-header > h3{
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type{
+        padding: 0 0 0px;
+    }
+    .main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    background-color: #ffffff;
+    color: #a8a6a6;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child:hover{
+    color: rgb(10, 10, 146)
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    display: none;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 30px;
+    width: 100%;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 > .multi-section-2-articale > div{
+    padding: 0 0 0;
+    height: 80px;
+    width: calc(100%);
+    border-radius: 5px; box-shadow: 0px 0 2px black;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction:row;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > img{
+    width: 13%;
+    margin-left: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type{
+    margin-top: 0px;
+    width: 80%;
+    padding: 0px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:first-of-type{
+    margin-left: 0;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:last-of-type{
+    font-size: 11px;
+}
+
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3{
+    background-color: #ffffff;
+    font-size: 13px;
+    padding:0 10px 10px;
+    display: none;
+    border-radius: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4{
+    display: none;
+    padding:0 10px 150px;
+    font-size: 13px;
+    background-color: #ffffff;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 > .multi-section-4-articale{
+    margin-top: 0px;
+    padding: 0 0px;
+}
+
+
+
+/* part fainal part page of thank */
+.main-index .index-multi-step .multi-thank{
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100px;
+    border-radius: 5px;
+    display: none;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-index .index-multi-step > .multi-thank > .thank-header > img{
+    width: 25%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header h3{
+    margin-bottom: 0;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section > span{
+    width: 100%;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section{
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0%;
+}
+}

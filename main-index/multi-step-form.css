@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(../fonts/Ubuntu-Bold.ttf);
+    font-family: ubuntu-bold;
+}
+@font-face{
+    src: url(../fonts/Ubuntu-Medium.ttf);
+    font-family: ubuntu-medium;
+}
+@font-face{
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-family: ubuntu-regular;
+}
+
+body{
+    background-color: #bdd;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body .main-index{
+    width: 90%;
+    height: 80%;
+    padding: 15px;
+    display: flex;
+}
+.main-index .index-multi-step{
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.main-index .index-multi-step .multi-step-section{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 100%;
+    padding: 20px;
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    border-radius: 10px;
+}
+.main-index .index-multi-step .multi-step-section > div{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px;
+}
+.main-index .index-multi-step .multi-step-section > div > span:first-of-type{
+    display: flex; justify-content: center;
+    align-items: center;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background-color:none;
+    margin-right: 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-family:  ubuntu-bold;
+}
+.main-index .index-multi-step .multi-step-section > div > span:first-of-type.active{
+    background-color: #e2dfdf;
+    color: black;
+}
+.main-index .index-multi-step .multi-step-section > div > span:last-of-type{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 85%;
+    font-family:  ubuntu-bold;
+    color: aliceblue;
+    
+}
+.main-index .index-multi-step .multi-step-section > div > span:last-of-type > span:first-of-type{
+    margin-bottom: 5px;
+    color: rgba(219, 217, 217, 0.87);
+}
+.main-index .index-multi-step > .multi-step-aside{
+    width: calc(100% - 27%);
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.main-index .index-multi-step > .multi-step-aside.thank{
+    display: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    cursor: pointer;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child.stop,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child.stop{
+    pointer-events: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    font-family: ubuntu-regular;
+    color: #022a3a;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header{
+    display: flex;
+    flex-direction: column;
+    font-family: ubuntu-regular;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-header > span:first-of-type{
+    color: #a8a6a6;
+}
+.main-index .index-multi-step .multi-section-header > span:first-of-type{
+    color: #a8a6a6;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale{
+    display: flex;
+    flex-direction: column;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 5px;
+    text-transform: capitalize;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type > span:first-of-type{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(184, 12, 12);
+    display: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div span:first-of-type > span.error{
+    display: block;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div > input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 140, 140);
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-1 .multi-section-articale > div > input.error{
+    border: 1px solid red;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: none;
+    padding: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: capitalize;
+    padding: 15px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:first-child:hover{
+    background-color: blue;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child{
+    background-color: #ffffff;
+    color: #a8a6a6;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-footer button:last-child:hover{
+    color: rgb(10, 10, 146)
+}
+
+
+/* step tow options of select plan */
+
+.main-index .index-multi-step > .multi-step-aside > .multi-aside-section-2{
+    padding: 10px;
+    display: none;
+    font-family: ubuntu-regular;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale{
+    display: flex;
+    padding: 10px 0 30px;
+    justify-content: space-between;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div{
+    padding: 15px;
+    height: 200px;
+    width: calc(90% / 3);
+    border-radius: 5px; box-shadow: 0px 0 2px black;
+    cursor: pointer;
+    border: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 > .multi-section-2-articale > div.active{
+    background-color: #f5f3f3;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > span > span:first-of-type > span{
+    color: red;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > img{
+    width: 35%;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > span:first-of-type{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type span:first-of-type > span{
+    margin: 0%;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > span:first-of-type > span:last-of-type{
+    font-weight: bold;
+    font-size: 13px;
+    display: none;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div > span:first-of-type > span:last-of-type.active{
+    display: block;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type span:nth-of-type(1){
+    color: #a8a6a6;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .multi-section-2-articale > div > div span:first-of-type > p:first-of-type{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 204, 199);
+    border-radius: 10px;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > div{
+    color:  #022a3a;font-size: 30px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > div > span{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > div > span:nth-of-type(2){
+    transform: rotatey(180deg);
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > div > span.active{
+    opacity: 0;
+    z-index: 1;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > span:nth-of-type(2) > .active{
+    transform: rotatey(180deg);
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > span{
+    padding: 10px;
+    
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > span > label,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-2 .footer-section-2 > span > input{
+    cursor: pointer;
+}
+
+
+
+
+/* step of add-ons help */
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-header{
+    padding: 0 0 10px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 > .multi-section-3-articale{
+    margin-top: 20px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div span:nth-of-type(2){
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50px;
+    width: 80%;
+    margin: 0 5px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div span:nth-of-type(3){
+    color: blue;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div span:nth-of-type(2) > p{
+    margin: 0;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div > span:nth-of-type(1){
+    cursor: pointer;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div > span:nth-of-type(1) > input{
+    cursor: pointer;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div > span:nth-of-type(1) > input:checked,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-3 .multi-section-3-articale > div > span:nth-of-type(1) > span:checked{
+     background-color: rgb(221, 67, 15);
+}
+
+
+
+/* step of finishing up */
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 > .multi-section-4-articale{
+    margin-top: 10px;
+    padding: 0 0px;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div{
+    width: 100%;
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(1) span:first-of-type span:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(1) > hr{
+    width: 100%;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(1) > span:first-of-type > span:first-of-type > p{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(1) > span:first-of-type > span:last-of-type{
+    font-weight: bold;
+    color: black;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(1),
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(2){
+    background-color: #f5f2f2;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(3) > span > p,
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(2) > span > p{
+    color: #a8a6a6;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div:nth-of-type(3) > span:first-of-type > span:first-of-type{
+    color: blue;
+    font-weight: bold;
+}
+.main-index .index-multi-step > .multi-step-aside .multi-aside-section-4 .multi-section-4-articale > div > span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* part of thanks page */
+
+.main-index .index-multi-step > .multi-thank{
+    width: 70%;
+    height: 100%;
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-index .index-multi-step > .multi-thank.thank{
+    display: block;
+}
+.main-index .index-multi-step > .multi-thank > .thank-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section{
+    width: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.main-index .index-multi-step > .multi-thank > .thank-section > span{
+    font-size: 14px;
+    width: 50%;
+    color: #a8a6a6;
+}
+
+
+

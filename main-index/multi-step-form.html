@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multi-step-form.css">
+    <link rel="stylesheet" href="multi-step-midia.css">
+    <link rel="stylesheet" href="all.css">
+    <title>multi-step-form-main</title>
+</head>
+<body>
+    <div class="main-index">
+        <div class="index-multi-step">
+            <div class="multi-step-section">
+                <div class="step-1">
+                    <span class="active" title="1">1</span><span><span>step 1</span><span>your info</span></span>
+                </div>
+                <div class="step-2">
+                    <span class="" title="2">2</span><span><span>step 2</span><span>select plan</span></span>
+                </div>
+                <div class="step-3">
+                    <span class="" title="3">3</span><span><span>step 3</span><span>add-cns</span></span>
+                </div>
+                <div class="step-4">
+                    <span class="" title="4">4</span><span><span>step 4</span><span>summary</span></span>
+                </div>
+            </div>
+            <div class="multi-step-aside">
+                <div class="multi-aside-section-1" title="1">
+                    <div class="multi-section-header">
+                        <h3>Personal info</h3>
+                        <span>Please provide your name email address, and phone rumber</span>
+                    </div>
+                    <div class="multi-section-articale">
+                            <div class="name">
+                                <span>
+                                    <label for="name">name</label><span class="">This feild is required</span>
+                                </span>
+                                    <input type="text" name="" id="name" class="">
+                            </div>
+                            <div class="email">
+                                <span>
+                                    <label for="email">email address</label><span class="">This feild is required</span>
+                                </span>
+                                    <input type="email" name="" id="email" class="">
+                            </div>
+                            <div class="phone">
+                                <span>
+                                    <label for="phone">phone number</label> <span class="">This feild is required</span>
+                                </span>
+                                    <input type="number" name="" id="phone" class="">
+                            </div>
+                    </div>
+                </div>
+                <div class="multi-aside-section-2" title="2">
+                    <div class="multi-section-header">
+                        <h3>Select your plan</h3>
+                        <span>you have the option of monthely or yearly billing</span>
+                    </div>
+                    <div class="multi-section-2-articale">
+                        <div class="option-1 active" title="arcade">
+                            <div class="arcade">
+                                <img src="../images/icon-arcade.svg" alt="" srcset="">
+                                <span><p>Arcade</p>
+                                    <span title="$9/">$9/<span>mo</span>
+                                </span>
+                                <span class="">2monthly free</span>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="option-2" title="advanced">
+                            <div class="advanced">
+                                <img src="../images/icon-advanced.svg" alt="" srcset="">
+                                <span><p>Advanced</p><span title="$12/">$12/<span>mo</span> </span><span class="">2monthly free</span></span>
+                            </div>
+                        </div>
+                        <div class="option-3" title="pro">
+                            <div class="pro">
+                                <img src="../images/icon-pro.svg" alt="" srcset="">
+                                <span><p>Pro</p><span title="$15/">$15/<span>mo</span></span><span class="">2monthly free</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section-2">
+                        <span>Monthely</span>
+                        
+                        <div>
+                            <span class="active" title="yr"><i class="fa fa-toggle-on"></i></span>
+                            <span class="" title="mo"><i class="fa fa-toggle-on"></i></span>
+                        </div>
+                        
+                        <span>Yearly</span>
+                    </div>
+                </div>
+                <div class="multi-aside-section-3" title="3">
+                    <div class="multi-section-header">
+                        <h3>Pick add-ons</h3>
+                        <span>Add ons help enhance your gaming experience</span>
+                    </div>
+                    <div class="multi-section-3-articale">
+                        <div class="checked-1">
+                            <span><input type="checkbox" name="" id="Online service" checked></span>
+                            <span><p>Online service</p><span>Acceess to multiplayer games</span></span>
+                            <span title="+$5">+$5/<span>mo</span></span>
+                        </div>
+                        <div class="checked-2">
+                            <span><input type="checkbox" name="" id="Larger storage"></span>
+                            <span><p>Larger storage</p><span>Extra 1TB of cloud save</span></span>
+                            <span title="+$6">+$6/<span>mo</span></span>
+                        </div>
+                        <div class="checked-3">
+                            <span><input type="checkbox" name="" id="Customizable Profile"></span>
+                            <span><p>Customizable Profile</p><span>Custom theme on your profile</span></span>
+                            <span title="+$10">+$10/<span>mo</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="multi-aside-section-4" title="4">
+                    <div class="multi-section-header">
+                        <h3>Finishing up</h3>
+                        <span>duoble check everything looks Ok before confinming.</span>
+                    </div>
+                    <div class="multi-section-4-articale">
+                        <div class="finish-1">
+                           <span><span><p>Arcade(monthly)</p><a href="http://google"> chrome</a></span><span>$9/<span>mo</span></span></span> 
+                            <hr>
+                        </div>
+                        <div class="finish-2">
+                        </div>
+                        <div class="finish-3">
+                            <span><p>Total(Der month)</p><span>+$12/<span>mo</span></span></span>
+                        </div>
+                    </div>
+                </div>
+                <span class="multi-aside-footer">
+                    <button type="reset" title="1" class="">Next Step</button>
+                    <button type="reset" title="2" class="">Go back</button>
+                </span>
+            </div>
+            <div class="multi-thank">
+                <div class="thank-header">
+                    <img src="../images/icon-thank-you.svg" alt="" srcset="">
+                    <h3>Thank you!</h3>
+                </div>
+                <div class="thank-section">
+                    <span>Thanks for confirming  your subscription we hope you have fun using 
+                        our platform, if you ever need support, piease feelfree to email us at support@laremgaming.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="multi-step-form.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
